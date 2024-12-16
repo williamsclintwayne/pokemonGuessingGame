@@ -1,0 +1,111 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background-image: url('path/to/background-image.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.pokemon-display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#guess-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pokemon-options {
+    margin: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
+
+input[type="radio"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    background: white;
+    transition: background 0.3s;
+}
+
+input[type="radio"]:checked + label:before {
+    background: #007bff;
+}
+
+#submit-guess {
+    margin-top: 25px;
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    border: 2px solid #ff9900;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#submit-guess:hover {
+    background: linear-gradient(45deg, #ff9900, #ffcc00);
+    transform: scale(1.05);
+}
+
+.results-container {
+    background-color: #f9f9f9;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#result-table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#correct{
+    color: chartreuse;
+    font-weight: bold;
+}
+#wrong{
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Browser Game: JavaScript API Quiz</title>
+    <meta name="description" content="A fun Pokémon guessing game using JavaScript and the PokéAPI. Test your Pokémon knowledge with this interactive browser-based quiz!">
+    <meta name="keywords" content="Pokémon, JavaScript, API, PokéAPI, browser game, quiz, guessing game">
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Game",
+      "name": "Pokémon Browser Game",
+      "description": "A JavaScript-based Pokémon guessing game using the PokéAPI",
+      "genre": "Quiz",
+      "gamePlatform": "Web Browser",
+      "applicationCategory": "Game"
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Pokémon Browser Game: Test Your Knowledge!</h1>
+    </header>
+    <main class="game-container">
+        <section class="pokemon-display" aria-live="polite"></section>
+        <form id="guess-form">
+            <fieldset id="pokemon-options">
+                <legend>Choose the correct Pokémon:</legend>
+                <div>
+                    <input type="radio" id="pokemon1" name="pokemon" value="pokemon1">
+                    <label for="pokemon1">Pikachu</label>
+                </div>
+                <div>
+                    <input type="radio" id="pokemon2" name="pokemon" value="pokemon2">
+                    <label for="pokemon2">Charmander</label>
+                </div>
+                <div>
+                    <input type="radio" id="pokemon3" name="pokemon" value="pokemon3">
+                    <label for="pokemon3">Bulbasaur</label>
+                </div>
+            </fieldset>
+            <button id="submit-guess" type="submit">Submit Guess</button>
+        </form>
+    </main>
+    <footer>
+        <p>Powered by <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer">PokéAPI</a> | Created with JavaScript</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
